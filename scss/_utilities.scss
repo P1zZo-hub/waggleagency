@@ -27,11 +27,11 @@
   h4,
   h5,
   h6 {
-    @apply font-satoshi text-black dark:text-backgroundBody;
+    @apply font-poppins text-black dark:text-backgroundBody;
   }
 
   h1 {
-    @apply text-5xl font-normal leading-tight tracking-[-2px] sm:text-[55px] md:text-[67px] lg:text-[84px] xl:text-8xl xl:leading-[1.15] xl:tracking-[-2.88px];
+    @apply text-5xl font-degular leading-tight tracking-[0.021em] sm:text-[55px] md:text-[67px] lg:text-[84px] xl:text-8xl xl:leading-[1.15] xl:tracking-[0.021em];
   }
 
   h2 {

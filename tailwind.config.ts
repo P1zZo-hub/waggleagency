@@ -1,5 +1,6 @@
 import type { Config } from 'tailwindcss'
 
+
 export default {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -16,17 +17,17 @@ export default {
         '2xl': '1430px',
       },
       fontFamily: {
-        satoshi: ['var(--font-satoshi)'],
-        instrument: ["'Instrument Serif', system-ui"],
+        degular: ['degular-display', 'sans-serif'],
+        poppins: ['Poppins', 'sans-serif'],
       },
       colors: {
-        primary: '#12D8CC',
-        secondary: '#181818',
+        primary: '#00a19a',
+        secondary: '#3c3c3b',
         backgroundBody: '#EDF0F5',
-        black: '#181818',
+        black: '#3c3c3b',
         colorText: '#181818b3',
         dark: {
-          DEFAULT: '#151515',
+          DEFAULT: '#3c3c3b',
           100: '#ffffffb3',
           200: '#212220',
           300: '#191A17',

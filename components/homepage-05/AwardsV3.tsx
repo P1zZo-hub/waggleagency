@@ -14,7 +14,7 @@ const AwardsV3 = () => {
         <div className="mb-10 lg:mb-20">
           <RevealWrapper
             as="p"
-            className="reveal-me text-center font-satoshi text-sm font-normal uppercase leading-6 tracking-[3px]">
+            className="reveal-me text-center font-poppins text-sm font-normal uppercase leading-6 tracking-[3px]">
             Award
           </RevealWrapper>
           <TextAppearAnimation>

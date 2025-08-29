@@ -22,7 +22,7 @@ const menuItems: MenuItemProps[] = [
       { title: 'Homepage 03 -  Portfolio', url: '/home-03' },
       { title: 'Homepage 04 -  Photography Studio', url: '/home-04' },
       { title: 'Homepage 05 -  SEO Agency', url: '/home-05' },
-      { title: 'Homepage 06 -  Creative Agency', url: '/home-06' },
+      { title: 'Homepage 06 -  Waggle Agency', url: '/home-06' },
       { title: 'Homepage 07 -  Design Studio', url: '/home-07' },
       { title: 'Homepage 08 -  Business Solutions', url: '/home-08' },
       { title: 'Homepage 09 -  Personal Branding', url: '/home-09' },
@@ -45,7 +45,7 @@ const menuItems: MenuItemProps[] = [
     ],
   },
   {
-    title: 'About',
+    title: 'Chi Siamo',
     url: '#',
     items: [
       { title: 'About', url: '/about' },
@@ -53,7 +53,7 @@ const menuItems: MenuItemProps[] = [
     ],
   },
   {
-    title: 'Services',
+    title: 'Servizi',
     url: '#',
     items: [
       { title: 'Services', url: '/services' },
@@ -61,7 +61,7 @@ const menuItems: MenuItemProps[] = [
     ],
   },
   {
-    title: 'Blog',
+    title: 'Lavora con noi',
     url: '#',
     items: [
       { title: 'AI Blog', url: '/ai-blog' },
@@ -70,7 +70,7 @@ const menuItems: MenuItemProps[] = [
     ],
   },
   {
-    title: 'Projects',
+    title: 'Contattaci',
     url: '#',
     items: [
       { title: 'Design Agency', url: '/design-agency' },

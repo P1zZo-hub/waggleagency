@@ -8,7 +8,7 @@ const SeoServiceV2 = () => {
         <div className="mb-10 lg:mb-20">
           <RevealWrapper
             as="p"
-            className="text-center font-satoshi text-sm font-normal uppercase leading-6 tracking-[3px]">
+            className="text-center font-poppins text-sm font-normal uppercase leading-6 tracking-[3px]">
             Why Choose Rivor
           </RevealWrapper>
           <TextAppearAnimation>

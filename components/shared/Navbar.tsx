@@ -298,7 +298,7 @@ export default function Navbar() {
                 priority
               />
               <Image
-                className="hidden max-h-[68px] w-auto dark:inline-block"
+                className="hidden max-h-[100px] w-[80%] dark:inline-block"
                 src={logoDark}
                 alt="logo"
                 width={136}
@@ -320,7 +320,7 @@ export default function Navbar() {
       <nav
         ref={menuRef}
         data-lenis-prevent="true"
-        className="menu fixed right-6 top-0 z-[99999] min-h-screen w-full overflow-y-auto opacity-0 before:absolute before:top-0 before:w-[1px] before:bg-backgroundBody before:bg-opacity-10 before:content-none md:before:left-[40%] md:before:h-screen md:before:content-[''] lg:before:left-[32%] lg:before:h-[calc(100vh-87px)] xl:before:left-[40%] xl:before:h-[calc(100vh-94px)]">
+        className="menu fixed right-6 top-0 z-[99999] min-h-screen w-full overflow-y-auto opacity-0 before:absolute before:top-0 before:w-[1px] before:bg-backgroundBody before:bg-opacity-10 before:content-none md:before:left-[45%] md:before:h-screen md:before:content-[''] lg:before:left-[32%] lg:before:h-[calc(100vh-87px)] xl:before:left-[45%] xl:before:h-[calc(100vh-94px)]">
         <button
           ref={closeBtnRef}
           onClick={closeMenu}

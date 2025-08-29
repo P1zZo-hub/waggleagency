@@ -49,7 +49,7 @@ const CircleTextAnimation = () => {
       <Image src={textCircleDarkLogo} alt="text-circle-logo" className="hidden dark:inline" />
       <div
         ref={textRef}
-        className="text absolute flex h-full w-full items-center justify-center font-satoshi uppercase"
+        className="text absolute flex h-full w-full items-center justify-center font-poppins uppercase"
       />
     </div>
   )

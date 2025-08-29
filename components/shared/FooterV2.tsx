@@ -5,7 +5,7 @@ const FooterV2 = () => {
   return (
     <footer className="w-full overflow-hidden">
       <div className="bg-backgroundBody dark:bg-secondary">
-        <h5 className="footer-text-v2 w-full text-nowrap text-center font-satoshi text-[120px] font-medium uppercase leading-[100%] sm:text-[200px] md:text-[258px] lg:text-[300px] xl:text-[350px] 2xl:text-[386px]">
+        <h5 className="footer-text-v2 w-full text-nowrap text-center font-poppins text-[120px] font-medium uppercase leading-[100%] sm:text-[200px] md:text-[258px] lg:text-[300px] xl:text-[350px] 2xl:text-[386px]">
           Rivor
         </h5>
       </div>
@@ -19,7 +19,7 @@ const FooterV2 = () => {
                 Rivor Agency offers global business and technology services, transforming brands with customized
                 solutions for over a decade.
               </p>
-              <h5 className="mb-3 font-satoshi text-2xl font-medium leading-[1.1]">Address</h5>
+              <h5 className="mb-3 font-poppins text-2xl font-medium leading-[1.1]">Address</h5>
               <p>
                 2261 Market Street #5039 San <br />
                 Francisco, CA 94114

@@ -58,7 +58,7 @@ const PricingCard = ({ showHeader = false }: PricingProps) => {
             )}
 
             <RevealWrapper className="flex flex-col items-center justify-center gap-6 md:flex-row">
-              <p className="flex gap-2.5 overflow-hidden text-ellipsis font-satoshi text-[17px] font-normal leading-[1.4] tracking-[0.34px]">
+              <p className="flex gap-2.5 overflow-hidden text-ellipsis font-poppins text-[17px] font-normal leading-[1.4] tracking-[0.34px]">
                 <span>
                   <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
                     <path

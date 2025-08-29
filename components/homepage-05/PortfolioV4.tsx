@@ -16,7 +16,7 @@ const PortfolioV4 = () => {
         <div>
           <RevealWrapper
             as="p"
-            className="text-center font-satoshi text-sm font-normal uppercase leading-6 tracking-[3px]">
+            className="text-center font-poppins text-sm font-normal uppercase leading-6 tracking-[3px]">
             SEO Agency
           </RevealWrapper>
           <TextAppearAnimation>
@@ -41,7 +41,7 @@ const PortfolioV4 = () => {
 
               {/* Overlapping Content Card */}
               <div className="z-30 max-w-[570px] border bg-backgroundBody p-[30px] dark:border-dark dark:bg-dark max-md:-mt-5 lg:absolute lg:right-0">
-                <p className="mb-[14px] font-satoshi text-sm font-normal uppercase leading-6 tracking-[3px]">
+                <p className="mb-[14px] font-poppins text-sm font-normal uppercase leading-6 tracking-[3px]">
                   {project.category}
                 </p>
                 <div className="blog-title mb-3.5 lg:mb-5">
