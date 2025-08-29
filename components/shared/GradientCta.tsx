@@ -35,7 +35,7 @@ const GradientCta = () => {
               ]}
             />
             with us.
-            <i className="block font-instrument italic max-md:inline-block max-sm:pl-1.5">A virtual coffee?</i>
+            <i className="font-instrument block italic max-md:inline-block max-sm:pl-1.5">A virtual coffee?</i>
           </h2>
         </div>
         {renderForm()}

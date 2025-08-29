@@ -43,7 +43,7 @@ const homepage23 = () => {
           ]}
         />
         Your
-        <span className="block font-instrument italic max-md:inline-block sm:mt-10">Future Together</span>
+        <span className="font-instrument block italic max-md:inline-block sm:mt-10">Future Together</span>
       </CTA>
     </LayoutTwo>
   )

@@ -14,7 +14,7 @@ const HeroV2 = () => {
         </p>
         <h1 className="mt-5 max-lg:text-center sm:mt-10">
           Transforming Ideas into Digital
-          <i className="mx-1 font-instrument"> Master pieces </i> that Drive
+          <i className="font-instrument mx-1"> Master pieces </i> that Drive
           <i className="font-instrument"> Success</i>
         </h1>
         <ul className="mt-14 flex list-none justify-start">

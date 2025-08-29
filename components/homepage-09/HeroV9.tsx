@@ -16,7 +16,7 @@ const HeroV9 = () => {
           <div className="w-full flex-1 max-lg:self-center">
             <TextAppearAnimation>
               <h1 className="text-appear xl:text-[85px] xl:leading-[1.22]">
-                Hey I'm <i className="block font-instrument italic">Svetlana —</i> Web Designer & Product Designer
+                Hey I'm <i className="font-instrument block italic">Svetlana —</i> Web Designer & Product Designer
               </h1>
             </TextAppearAnimation>
             <RevealWrapper className="reveal-me mt-10 flex items-center gap-5 pb-10 lg:pb-16 xl:pb-24">

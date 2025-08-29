@@ -55,7 +55,7 @@ const BlogPostV5: FC<BlogsProps> = ({ Blogs }) => {
                   />
                 </figure>
               </Link>
-              <p className="font-poppins mb-5 mt-[30px] text-sm font-normal uppercase leading-[1.1] tracking-[1.12px]">
+              <p className="mb-5 mt-[30px] font-poppins text-sm font-normal uppercase leading-[1.1] tracking-[1.12px]">
                 {blog.date}
               </p>
               <Link href={`/ai-blog/${blog.slug}`}>

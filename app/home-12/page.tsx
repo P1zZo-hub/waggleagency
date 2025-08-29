@@ -46,7 +46,7 @@ const homepage12 = () => {
           ]}
         />
         Transformation
-        <span className="block font-instrument italic max-md:inline-block sm:mt-10">Starts Today</span>
+        <span className="font-instrument block italic max-md:inline-block sm:mt-10">Starts Today</span>
       </CTA>
     </LayoutTwo>
   )

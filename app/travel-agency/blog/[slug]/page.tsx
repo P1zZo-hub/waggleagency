@@ -39,7 +39,7 @@ const BlogDetails = async ({ params }: { params: Promise<{ slug: string }> }) =>
           ]}
         />
         with us.
-        <i className="block font-instrument italic max-md:inline-block max-sm:pl-2 sm:mt-10">A virtual coffee?</i>
+        <i className="font-instrument block italic max-md:inline-block max-sm:pl-2 sm:mt-10">A virtual coffee?</i>
       </CTA>
     </LayoutTwo>
   )

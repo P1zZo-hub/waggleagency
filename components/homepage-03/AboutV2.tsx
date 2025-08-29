@@ -25,7 +25,7 @@ const AboutV2 = () => {
             />
             <button
               type="submit"
-              className="font-poppins absolute right-2 top-3 inline-block cursor-pointer bg-primary p-3 uppercase leading-[15.4px] tracking-[1.12px] text-secondary max-md:text-xs md:top-2 md:p-[26px]">
+              className="absolute right-2 top-3 inline-block cursor-pointer bg-primary p-3 font-poppins uppercase leading-[15.4px] tracking-[1.12px] text-secondary max-md:text-xs md:top-2 md:p-[26px]">
               Send
             </button>
           </RevealWrapper>

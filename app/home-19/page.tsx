@@ -46,7 +46,7 @@ const homepage19 = () => {
           ]}
         />
         Something
-        <span className="block font-instrument italic max-md:inline-block sm:mt-10">Great Together</span>
+        <span className="font-instrument block italic max-md:inline-block sm:mt-10">Great Together</span>
       </CTA>
     </LayoutTwo>
   )

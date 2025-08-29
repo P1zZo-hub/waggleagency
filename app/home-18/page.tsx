@@ -34,7 +34,7 @@ const homepage18 = () => {
           ]}
         />
         Content
-        <span className="block font-instrument italic max-md:inline-block sm:mt-10">That Delivers Results</span>
+        <span className="font-instrument block italic max-md:inline-block sm:mt-10">That Delivers Results</span>
       </CTA>
     </LayoutTwo>
   )

@@ -20,7 +20,7 @@ const ProjectsPost = () => {
             <TextAppearAnimation>
               <h2 className="text-appear">
                 Our featured <br className="hidden md:block" />
-                <span className="pr-[4px] font-instrument italic">projects</span>
+                <span className="font-instrument pr-[4px] italic">projects</span>
               </h2>
             </TextAppearAnimation>
           </div>

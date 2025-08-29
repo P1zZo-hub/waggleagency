@@ -76,13 +76,13 @@
     .rv-button-top {
       @apply z-10 bg-primary;
       span {
-        @apply text-[#ffdb7c] font-semibold;
+        @apply font-semibold text-[#ffdb7c];
       }
     }
     .rv-button-bottom {
       @apply z-[9] border border-secondary bg-secondary;
       span {
-        @apply text-backgroundBody font-semibold;
+        @apply font-semibold text-backgroundBody;
       }
     }
   }

@@ -44,7 +44,7 @@ const HeroV15 = () => {
               <div className="absolute left-0 top-0 z-40 h-full w-[5%] bg-gradient-to-r from-backgroundBody to-transparent dark:from-dark-gradient" />
               <div className="marquee-container -z-10">
                 <Marquee>
-                  <h1 className="text-stroke reveal-me text-nowrap py-7 pr-3 font-instrument italic lg:py-1 2xl:py-7">
+                  <h1 className="text-stroke reveal-me font-instrument text-nowrap py-7 pr-3 italic lg:py-1 2xl:py-7">
                     We Build Brands That Resonate
                   </h1>
                 </Marquee>

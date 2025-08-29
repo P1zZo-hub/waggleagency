@@ -65,7 +65,7 @@ const DigitalSolutionBlog = () => {
                 <Link href={`/digital-agency/blog/${item?.slug}`}>
                   <h3 className="text-[27px] leading-tight tracking-tight md:text-3xl lg:text-4xl">{item.title}</h3>
                 </Link>
-                <p className="font-poppins mb-5 mt-3 text-lg font-normal leading-[1.4] tracking-[0.4px] md:mb-10 md:mt-5">
+                <p className="mb-5 mt-3 font-poppins text-lg font-normal leading-[1.4] tracking-[0.4px] md:mb-10 md:mt-5">
                   {item?.description}
                 </p>
                 <Link href={`/digital-agency/blog/${item?.slug}`} className="rv-button rv-button-primary2">

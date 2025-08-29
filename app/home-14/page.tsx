@@ -33,7 +33,7 @@ const homepage14 = () => {
           ]}
         />
         Something
-        <span className="block font-instrument italic max-md:inline-block sm:mt-10">Extraordinary</span>
+        <span className="font-instrument block italic max-md:inline-block sm:mt-10">Extraordinary</span>
       </CTA>
     </LayoutTwo>
   )

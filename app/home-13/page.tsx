@@ -35,7 +35,7 @@ const homepage13 = () => {
           ]}
         />
         Adventure
-        <span className="block font-instrument italic max-md:inline-block sm:mt-10">Today</span>
+        <span className="font-instrument block italic max-md:inline-block sm:mt-10">Today</span>
       </CTA>
     </LayoutTwo>
   )

@@ -35,7 +35,7 @@ const homepage17 = () => {
           ]}
         />
         Next
-        <span className="block font-instrument italic max-md:inline-block sm:mt-10">App Together</span>
+        <span className="font-instrument block italic max-md:inline-block sm:mt-10">App Together</span>
       </CTA>
     </LayoutTwo>
   )

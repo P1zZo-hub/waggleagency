@@ -35,7 +35,7 @@ const Homepage21 = () => {
           ]}
         />
         Free
-        <span className="block font-instrument italic max-md:inline-block sm:mt-10">Consultation</span>
+        <span className="font-instrument block italic max-md:inline-block sm:mt-10">Consultation</span>
       </CTA>
     </LayoutTwo>
   )

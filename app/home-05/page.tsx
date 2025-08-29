@@ -47,7 +47,7 @@ const homepage5 = () => {
           ]}
         />
         grow
-        <i className="block font-instrument italic max-md:inline-block max-sm:pl-2 sm:mt-10">your business?</i>
+        <i className="font-instrument block italic max-md:inline-block max-sm:pl-2 sm:mt-10">your business?</i>
       </CTA>
     </LayoutOne>
   )

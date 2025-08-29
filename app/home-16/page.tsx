@@ -40,7 +40,7 @@ const homepage16 = () => {
           ]}
         />
         Elevate
-        <span className="block font-instrument italic max-md:inline-block sm:mt-10">Your Marketing?</span>
+        <span className="font-instrument block italic max-md:inline-block sm:mt-10">Your Marketing?</span>
       </CTA>
     </LayoutTwo>
   )

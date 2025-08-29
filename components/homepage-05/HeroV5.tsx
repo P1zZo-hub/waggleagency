@@ -6,7 +6,7 @@ const HeroV5 = () => {
     <section className="relative overflow-hidden pb-7 pt-32 md:pb-16 lg:pb-[88px] lg:pt-[140px] xl:pb-[100px] xl:pt-[180px]">
       <RevealWrapper className="flex flex-col items-center justify-center gap-y-8 pl-10 md:justify-between xl:flex-row">
         <div className="container max-sm:!-ml-[5%] lg:!ml-[10%] xl:!ml-[7%]">
-          <p className="font-poppins flex items-center gap-5 text-sm font-normal uppercase leading-6 tracking-[3px] max-md:justify-center">
+          <p className="flex items-center gap-5 font-poppins text-sm font-normal uppercase leading-6 tracking-[3px] max-md:justify-center">
             SEO Agency
           </p>
           <h1 className="mt-2 block sm:mt-6 md:hidden">We are the brilliants in terms of digital marketing</h1>

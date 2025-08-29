@@ -8,7 +8,7 @@ const CareerHeroV2 = () => {
       <HeroGradientAnimation />
 
       <RevealWrapper className="container">
-        <p className="font-poppins flex flex-col items-center gap-2 text-sm font-normal uppercase leading-6 tracking-[3px] max-lg:justify-center md:flex-row md:gap-5">
+        <p className="flex flex-col items-center gap-2 font-poppins text-sm font-normal uppercase leading-6 tracking-[3px] max-lg:justify-center md:flex-row md:gap-5">
           <span>Creative Studio</span>
           <span className="inline-block h-[1px] w-[150px] bg-dark dark:bg-[#ffffffb3]"></span>
           <span>Join Our Team</span>

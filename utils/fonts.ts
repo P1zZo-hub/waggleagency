@@ -8,7 +8,7 @@ const poppins = Poppins({
 })
 
 // Degular (Adobe Fonts via Typekit)
-// ⚠️ Degular non può essere caricato da `next/font`, 
+// ⚠️ Degular non può essere caricato da `next/font`,
 // quindi lo includiamo via <link> in layout.tsx
 // e qui gli assegniamo una CSS variable per Tailwind
 const degular = {
@@ -17,4 +17,3 @@ const degular = {
 }
 
 export { poppins, degular }
-

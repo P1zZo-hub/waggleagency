@@ -16,8 +16,8 @@ const AboutV9 = () => {
           <TextAppearAnimation>
             <h2 className="text-appear mb-8 mt-3 text-center">
               Non siamo perfetti. <br className="hidden md:block" />
-              <span className="font-poppins">Siamo</span>{" "}
-              <span className="font-degular text-[#ffdb7c] !text-[#ffdb7c]"> Memorabili.</span>
+              <span className="font-poppins">Siamo</span>{' '}
+              <span className="font-degular !text-[#ffdb7c] text-[#ffdb7c]"> Memorabili.</span>
             </h2>
           </TextAppearAnimation>
         </div>
@@ -25,22 +25,22 @@ const AboutV9 = () => {
         <h3
           ref={revealRef}
           className="text-center text-2xl font-normal text-secondary/90 dark:text-backgroundBody/70 lg:text-3xl lg:leading-[1.5] lg:tracking-[0.72px] xl:text-4xl">
-          Non siamo cresciuti tra le luci di Times Square.
-Siamo nati in un favo, a Trapani, dentro un alveare che si chiama Beehive, dove giovani
-under 30 hanno deciso che il Sud non doveva solo inseguire, ma guidare.
-Da lì, un passo alla volta (anzi, una danza alla volta), è nata Waggle.
-<br />
-<span>Come le api, comunichiamo con energia e precisione: la Waggle Dance è il nostro
-manifesto, un movimento semplice che indica direzione, distanza e qualità.
-Tradotto nel nostro lavoro? Strategie chiare, idee che fanno rumore, progetti che lasciano il segno.
-</span>
-Non siamo i più bravi, non siamo perfetti.
-Ma se ti affidi a noi, di una cosa puoi stare certo: non ti annoierai mai.
-Mescoliamo creatività e metodo, ironia e rigore.
-A volte stiamo negli schemi, altre volte li spacchiamo in due.
-
-Perché “fare comunicazione” non basta:<br /><br /><span></span>
-  <span>Noi facciamo Waggle.</span>
+          Non siamo cresciuti tra le luci di Times Square. Siamo nati in un favo, a Trapani, dentro un alveare che si
+          chiama Beehive, dove giovani under 30 hanno deciso che il Sud non doveva solo inseguire, ma guidare. Da lì, un
+          passo alla volta (anzi, una danza alla volta), è nata Waggle.
+          <br />
+          <span>
+            Come le api, comunichiamo con energia e precisione: la Waggle Dance è il nostro manifesto, un movimento
+            semplice che indica direzione, distanza e qualità. Tradotto nel nostro lavoro? Strategie chiare, idee che
+            fanno rumore, progetti che lasciano il segno.
+          </span>
+          Non siamo i più bravi, non siamo perfetti. Ma se ti affidi a noi, di una cosa puoi stare certo: non ti
+          annoierai mai. Mescoliamo creatività e metodo, ironia e rigore. A volte stiamo negli schemi, altre volte li
+          spacchiamo in due. Perché “fare comunicazione” non basta:
+          <br />
+          <br />
+          <span></span>
+          <span>Noi facciamo Waggle.</span>
         </h3>
 
         <RevealWrapper as="ul" className="mx-auto mt-[56px] flex list-none justify-center">

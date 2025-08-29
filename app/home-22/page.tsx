@@ -51,7 +51,7 @@ const homepage22 = () => {
           ]}
         />
         Your
-        <span className="block font-instrument italic max-md:inline-block sm:mt-10">Dream Event Today!</span>
+        <span className="font-instrument block italic max-md:inline-block sm:mt-10">Dream Event Today!</span>
       </CTA>
     </LayoutTwo>
   )

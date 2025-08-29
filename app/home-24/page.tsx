@@ -35,7 +35,7 @@ const homepage23 = () => {
           ]}
         />
         a winning
-        <span className="block font-instrument italic max-md:inline-block sm:mt-10">Strategy Together.</span>
+        <span className="font-instrument block italic max-md:inline-block sm:mt-10">Strategy Together.</span>
       </CTA>
     </LayoutTwo>
   )

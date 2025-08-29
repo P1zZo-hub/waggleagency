@@ -40,7 +40,7 @@ const Homepage25 = () => {
           ]}
         />
         Headlines
-        <span className="block font-instrument italic max-md:inline-block sm:mt-10">Together</span>
+        <span className="font-instrument block italic max-md:inline-block sm:mt-10">Together</span>
       </CTA>
     </LayoutTwo>
   )
