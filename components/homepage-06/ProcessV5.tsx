@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Button from '@/components/ui/Button'
 import RevealWrapper from '../animation/RevealWrapper'
 import TextAppearAnimation from '../animation/TextAppearAnimation'
 
@@ -37,13 +38,8 @@ const ProcessV5 = () => {
         </div>
         <RevealWrapper as="ul" className="mt-14 flex list-none justify-center">
           <li className="block w-full text-center md:inline-block md:w-auto">
-            <Link href="/portfolio-agency/case-study" className="rv-button rv-button-primary block md:inline-block">
-              <div className="rv-button-top">
-                <span>Let’s Start Your Project</span>
-              </div>
-              <div className="rv-button-bottom">
-                <span className="text-nowrap">Let’s Start Your Project</span>
-              </div>
+            <Link href="/portfolio-agency/case-study">
+              <Button variant="primary" size="lg">Let’s Start Your Project</Button>
             </Link>
           </li>
         </RevealWrapper>

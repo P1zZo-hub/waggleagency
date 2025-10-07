@@ -1,6 +1,7 @@
 import { MarkdownData } from '@/interface'
 import getMarkDownData from '@/utils/GetMarkDownData'
 import Link from 'next/link'
+import Button from '@/components/ui/Button'
 import RevealWrapper from '../animation/RevealWrapper'
 
 const photographyServicesData: MarkdownData[] = getMarkDownData('data/creative-agency/services')
@@ -22,13 +23,8 @@ const ServicesV9 = () => {
             </p>
             <RevealWrapper as="ul" className="mt-5 justify-self-end max-md:w-full md:mt-10">
               <li className="mx-auto block w-full text-center md:inline-block md:w-auto">
-                <Link href="/services" className="rv-button rv-button-white block md:inline-block">
-                  <div className="rv-button-top">
-                    <span>See More Case Studies</span>
-                  </div>
-                  <div className="rv-button-bottom">
-                    <span>See More Case Studies</span>
-                  </div>
+                <Link href="/services">
+                  <Button variant="primary" size="lg">See More Case Studies</Button>
                 </Link>
               </li>
             </RevealWrapper>
@@ -68,12 +64,12 @@ const ServicesV9 = () => {
                 </div>
               </div>
 
-              <div className="overflow-hidden">
+              <div className="overflow-hidden rounded-xl">
                 <figure className="h-0 -translate-y-4 transform opacity-0 transition-all duration-700 ease-in-out group-hover:h-[110px] group-hover:translate-y-0 group-hover:opacity-100 md:group-hover:h-[160px] lg:group-hover:h-[230px]">
                   <img
                     src={photoService.thumbnail}
                     alt="Hover on Photography Services"
-                    className="object-cover px-5 pb-5 pt-4 transition-all duration-700 ease-in-out md:px-10 md:pb-10"
+                    className="object-cover px-5 pb-5 pt-4 transition-all duration-700 ease-in-out md:px-10 md:pb-10 rounded-xl"
                   />
                 </figure>
               </div>

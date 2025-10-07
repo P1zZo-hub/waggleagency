@@ -3,6 +3,7 @@ import useHorizontalScroll from '@/hooks/useHorizontalScroll'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import Link from 'next/link'
+import Button from '@/components/ui/Button'
 
 if (typeof window !== 'undefined') {
   gsap.registerPlugin(ScrollTrigger)
@@ -89,15 +90,10 @@ const TestimonialV6 = () => {
             <p className="text-appear max-w-lg md:place-self-end md:text-right">
               We offer a full suite of creative solutions tailored to your brand's success.
             </p>
-            <ul className="reveal-me mt-5 justify-self-end max-md:w-full md:mt-10">
+            <ul className="mt-5 justify-self-end max-md:w-full md:mt-10">
               <li className="mx-auto block w-full text-center md:inline-block md:w-auto">
-                <Link href="/services" className="rv-button rv-button-white block md:inline-block">
-                  <div className="rv-button-top">
-                    <span>Read More Testimonials</span>
-                  </div>
-                  <div className="rv-button-bottom">
-                    <span>Read More Testimonials</span>
-                  </div>
+                <Link href="/services">
+                  <Button variant="primary" size="lg">Read More Testimonials</Button>
                 </Link>
               </li>
             </ul>
@@ -108,7 +104,7 @@ const TestimonialV6 = () => {
         ref={contentRef}
         className="service-wrapper reveal-me flex w-fit flex-row flex-nowrap gap-9 overflow-x-hidden pl-[7%] md:pl-[20%] md:pr-10">
         {data.map((testimonial) => (
-          <div key={testimonial.id} className="w-[395px] md:w-[570px]">
+          <div key={testimonial.id} className="w-[395px] md:w-[570px] rounded-xl overflow-hidden">
             <span>
               <svg xmlns="http://www.w3.org/2000/svg" width={107} height={70} viewBox="0 0 107 70" fill="none">
                 <path
@@ -136,7 +132,7 @@ const TestimonialV6 = () => {
               </p>
             </div>
             <div className="flex flex-col">
-              <img src={testimonial.avatar} alt={testimonial.name} className="size-16 object-cover" />
+              <img src={testimonial.avatar} alt={testimonial.name} className="size-16 rounded-xl object-cover" />
               <div className="mt-2">
                 <h4 className="text-2xl leading-[1.1]">{testimonial.name}</h4>
                 <p className="mt-[1px] text-sm leading-[1.6] tracking-wide">{testimonial.position}</p>

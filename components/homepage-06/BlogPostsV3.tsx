@@ -1,6 +1,7 @@
 import getMarkDownData from '@/utils/GetMarkDownData'
 import Image from 'next/image'
 import Link from 'next/link'
+import Button from '@/components/ui/Button'
 import RevealWrapper from '../animation/RevealWrapper'
 import TextAppearAnimation from '../animation/TextAppearAnimation'
 
@@ -19,26 +20,21 @@ const BlogPostsV3 = () => {
         <div className="mb-10 flex flex-col items-start justify-center gap-x-10 gap-y-5 md:mb-20 md:flex-row md:items-center lg:justify-start">
           <div className="flex-1">
             <TextAppearAnimation>
-              <h2 className="text-appear">
-                Featured <span className="font-instrument italic">work</span>
+              <h2 className="text-appear text-clip-fix !text-[#ffdb7c] text-[#ffdb7c]">
+                Waggle <span className="font-poppins italic !text-[#ffdb7c] text-[#ffdb7c]">Works</span>
               </h2>
             </TextAppearAnimation>
           </div>
           <div className="max-w-md flex-1">
             <TextAppearAnimation>
               <p className="text-appear max-md:text-justify md:text-right">
-                Our user-centered design encourages productivity and boosts revenue.
+              Design che mette l’utente al centro e il business in movimento.
               </p>
             </TextAppearAnimation>
             <RevealWrapper as="ul" className="mt-5 justify-self-end max-md:w-full md:mt-10">
               <li className="mx-auto block w-full text-center md:inline-block md:w-auto">
-                <Link href="/seo-blog" className="rv-button rv-button-white block md:inline-block">
-                  <div className="rv-button-top">
-                    <span>See More Case Studies</span>
-                  </div>
-                  <div className="rv-button-bottom">
-                    <span>See More Case Studies</span>
-                  </div>
+                <Link href="/seo-blog">
+                  <Button variant="primary" size="lg">Scopri altri Waggle Works</Button>
                 </Link>
               </li>
             </RevealWrapper>
@@ -49,12 +45,12 @@ const BlogPostsV3 = () => {
           {blogPosts?.map((blog) => (
             <RevealWrapper key={blog.slug} className="underline-hover-effect group w-full">
               <Link href={`/creative-agency/blog/${blog?.slug}`} className="block">
-                <figure className="overflow-hidden">
+                <figure className="overflow-hidden rounded-xl">
                   <Image
                     width={550}
                     height={598}
                     src={blog.thumbnail}
-                    className="h-full w-full transition-all duration-500 group-hover:rotate-3 group-hover:scale-125"
+                    className="h-full w-full rounded-xl transition-all duration-500 group-hover:rotate-3 group-hover:scale-125"
                     alt="Blog Images"
                   />
                 </figure>
@@ -76,9 +72,14 @@ const BlogPostsV3 = () => {
               </Link>
               <div className="mt-6 border-b dark:border-dark"></div>
               <Link href={`/creative-agency/blog/${blog?.slug}`}>
-                <div className="absolute left-1/2 top-1/2 flex h-[74px] w-[136px] -translate-x-[90%] translate-y-[35%] scale-95 items-center justify-center gap-1 bg-primary px-8 py-6 uppercase opacity-0 transition-all duration-500 ease-in-out group-hover:translate-x-[-50%] group-hover:translate-y-[-50%] group-hover:scale-100 group-hover:opacity-100">
-                  <span className="text-secondary">view</span>
-                  <img src="/images/home-5/ArrowUpRight-dark.svg" alt="ArrowUpRight-dark" />
+                <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 transition-all duration-500 ease-in-out group-hover:opacity-100">
+                  <span className="btn btn--secondary btn--lg uppercase inline-flex items-center gap-2">
+                    VIEW
+                    <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7 17L17 7" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+                      <path d="M8 7H17V16" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                  </span>
                 </div>
               </Link>
             </RevealWrapper>

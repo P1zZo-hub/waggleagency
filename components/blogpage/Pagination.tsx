@@ -30,9 +30,7 @@ const Pagination = ({ paginateFunction }: any) => {
         <li className="group">
           <button
             onClick={handlePreviousPage}
-            className={`group flex size-10 items-center justify-center border text-sm font-normal duration-300 hover:bg-primary dark:border-colorText lg:size-14 ${
-              currentPage === 1 ? 'disabled:opacity-7 cursor-not-allowed' : 'cursor-pointer hover:bg-primary'
-            }`}
+            className={`btn btn--ghost btn--sm ${currentPage === 1 ? 'cursor-not-allowed opacity-70' : ''}`}
             disabled={currentPage === 1}>
             <span>
               <svg
@@ -54,7 +52,7 @@ const Pagination = ({ paginateFunction }: any) => {
         {Array.from({ length: totalPage }, (_, index) => (
           <li className={`group ${index + 1 === currentPage && 'page-active'}`} key={index}>
             <button
-              className="flex size-10 items-center justify-center text-sm duration-300 hover:bg-primary hover:text-secondary/70 hover:text-white group-[.page-active]:bg-primary dark:group-[.page-active]:text-secondary lg:size-14"
+              className="btn btn--ghost btn--sm group-[.page-active]:btn--primary"
               onClick={() => handlePageChange(index + 1)}>
               {index + 1}
             </button>
@@ -64,9 +62,7 @@ const Pagination = ({ paginateFunction }: any) => {
         <li className="group">
           <button
             onClick={handleNextPage}
-            className={`group flex size-10 items-center justify-center border text-sm font-normal duration-300 hover:bg-primary dark:border-colorText lg:size-14 ${
-              currentPage === totalPage ? 'disabled:opacity-7 cursor-not-allowed' : 'cursor-pointer hover:bg-primary'
-            }`}
+            className={`btn btn--ghost btn--sm ${currentPage === totalPage ? 'cursor-not-allowed opacity-70' : ''}`}
             disabled={currentPage === totalPage}>
             <span>
               <svg

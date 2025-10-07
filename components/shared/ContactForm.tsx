@@ -14,7 +14,7 @@ const budgetData = [
 
 const ContactForm = () => {
   return (
-    <form className="reveal-me mx-auto mt-20 grid max-w-[800px] grid-cols-1 gap-[30px] md:grid-cols-2">
+    <form className="mx-auto mt-20 grid max-w-[800px] grid-cols-1 gap-[30px] md:grid-cols-2">
       {/* Your Data Field */}
       <div className="md:col-span-full">
         <label htmlFor="name" className="text-2xl leading-[1.2] tracking-[-0.48px] text-[#000000b3] dark:text-dark-100">
@@ -80,13 +80,8 @@ const ContactForm = () => {
       </div>
 
       {/* Submit Button */}
-      <button type="submit" className="rv-button rv-button-secondary col-span-full !w-full">
-        <div className="rv-button-top !w-full !text-center">
-          <span className="!font-normal">Submit Message</span>
-        </div>
-        <div className="rv-button-bottom !w-full !text-center">
-          <span className="!font-normal">Submit Message</span>
-        </div>
+      <button type="submit" className="btn btn--primary btn--lg col-span-full !w-full">
+        <span>Submit Message</span>
       </button>
     </form>
   )

@@ -118,7 +118,7 @@ const VideoModal: FC<VideoModalProps> = ({
 
           <Dialog.Close asChild>
             <button
-              className="absolute right-4 top-4 rounded-full bg-black bg-opacity-30 p-1 text-white hover:bg-opacity-50 focus:outline-none"
+              className="btn btn--ghost btn--sm absolute right-4 top-4"
               aria-label="Close"
               onClick={handleClose}>
               <svg

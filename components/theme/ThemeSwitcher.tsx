@@ -12,12 +12,12 @@ const ThemeSwitcher = () => {
   }, [])
 
   return mount ? (
-    <div className="toggle-button fixed bottom-10 right-10 z-[1000]">
+    <div className="toggle-button fixed bottom-6 right-6 z-[1000]">
       <button
         onClick={() => setTheme(currentTheme === 'dark' ? 'light' : 'dark')}
         type="button"
-        className="fixed bottom-10 right-10 z-[9999] flex size-11 items-center justify-center rounded-[1px] bg-black/90 text-secondary backdrop-blur-xl focus:outline-none focus:ring-0 focus:ring-gray-200 dark:bg-white/90 dark:text-white">
-        <svg className="block h-5 w-5 dark:hidden" fill="#fff" strokeLinejoin="round" viewBox="0 0 16 16">
+        className="btn btn--ghost btn--sm theme-switcher-btn fixed bottom-6 right-6 z-[9999] flex size-11 items-center justify-center rounded-[14px] focus:outline-none focus:ring-0 focus:ring-gray-200">
+        <svg className="block h-7 w-7 dark:hidden" fill="#fff" strokeLinejoin="round" viewBox="0 0 16 16">
           <path
             fillRule="evenodd"
             clipRule="evenodd"
@@ -26,7 +26,7 @@ const ThemeSwitcher = () => {
             transform="translate(2.25, 2.25)"></path>
         </svg>
 
-        <svg className="hidden h-5 w-5 dark:block" fill="#000" viewBox="0 0 16 16" strokeLinejoin="round">
+        <svg className="hidden h-7 w-7 dark:block" fill="#000" viewBox="0 0 16 16" strokeLinejoin="round">
           <path
             fillRule="evenodd"
             clipRule="evenodd"

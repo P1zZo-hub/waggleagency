@@ -1,43 +1,39 @@
-import Hero from '@/components/homepage-01/Hero'
-import Portfolio from '@/components/homepage-01/Portfolio'
-import Testimonial from '@/components/homepage-01/Testimonial'
-import About from '@/components/shared/About'
+import AboutV9 from '@/components/homepage-06/AboutV9'
+import BlogPostsV3 from '@/components/homepage-06/BlogPostsV3'
+import HeroV6 from '@/components/homepage-06/HeroV6'
+import ProcessV5 from '@/components/homepage-06/ProcessV5'
+import ServicesV9 from '@/components/homepage-06/ServicesV9'
+import TestimonialV6 from '@/components/homepage-06/TestimonialV6'
 import ClientsV3 from '@/components/shared/ClientsV3'
-import Community from '@/components/shared/Community'
+import ClientV4 from '@/components/shared/ClientV4'
 import CTA from '@/components/shared/CTA'
 import CtaImageSlider from '@/components/shared/CtaImageSlider'
-import FAQ from '@/components/shared/FAQ'
 import LayoutOne from '@/components/shared/LayoutOne'
-import ServicesV8 from '@/components/shared/ServicesV8'
-import Video from '@/components/shared/Video'
 
-export const metadata = {
-  title: 'Rivor | Design Agency',
-}
+export const metadata = { title: 'Waggle Agency' }
 
 const Home = () => {
   return (
     <LayoutOne>
-      <Hero />
-      <Video />
-      <About />
-      <Portfolio />
+      <HeroV6 />
+      <AboutV9 />
       <ClientsV3 />
-      <ServicesV8 />
-      <Community />
-      <FAQ />
-      <Testimonial />
-      <CTA>
-        Let's chat!
+      <BlogPostsV3 />
+      <ServicesV9 />
+      <ClientV4 />
+      <ProcessV5 />
+      <TestimonialV6 />
+      <CTA showContactForm>
+        Let’s
         <CtaImageSlider
           slides={[
-            { id: '1', img: '/images/agent/01.jpg' },
+            { id: '1', img: '/images/agent/07.png' },
             { id: '2', img: '/images/agent/02.jpg' },
-            { id: '3', img: '/images/agent/03.jpg' },
+            { id: '3', img: '/images/agent/06.png' },
           ]}
         />
-        with us.
-        <i className="font-instrument block italic max-md:inline-block max-sm:pl-2 sm:mt-10">A virtual coffee?</i>
+        Create
+        <span className="font-instrument block italic max-md:inline-block sm:mt-10">Something Iconic</span>
       </CTA>
     </LayoutOne>
   )

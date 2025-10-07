@@ -6,6 +6,42 @@ body {
   @apply m-0 max-w-[100vw] overflow-x-hidden bg-black p-0 font-poppins antialiased;
 }
 
+// ---------- Waggle UI Design Tokens ----------
+:root {
+  /* Brand (can be tuned per theme) */
+  --waggle-honey: #ffd648;   /* miele energico */
+  --waggle-turquoise: #23c6c8;
+  --waggle-ink: #121212;
+  --waggle-ink-2: #1a1a1a;
+  --waggle-white: #ffffff;
+
+  /* Glass */
+  --glass-bg: hsla(0, 0%, 100%, 0.08);
+  --glass-border: hsla(0, 0%, 100%, 0.22);
+  --glass-highlight: hsla(0, 0%, 100%, 0.35);
+  --glass-shadow: rgba(0, 0, 0, 0.20);
+  --glass-blur: 14px;
+  --glass-sat: 140%;
+
+  /* Motion */
+  --ease-out: cubic-bezier(.16, 1, .3, 1);
+  --ease-in: cubic-bezier(.7, 0, .84, 0);
+  --dur-press: 120ms;
+  --dur-hover: 360ms;
+
+  /* Rings (accessibility) */
+  --ring: 2px;
+  --ring-color: color-mix(in oklab, var(--waggle-honey) 65%, white 35%);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --glass-bg: hsla(0, 0%, 100%, 0.06);
+    --glass-border: hsla(0, 0%, 100%, 0.18);
+    --glass-shadow: rgba(0, 0, 0, 0.35);
+  }
+}
+
 // Hide Scrollbar
 // -------------
 // * {
@@ -121,6 +157,13 @@ html.lenis {
     .word {
       @apply text-inherit;
     }
+  }
+}
+
+// Utility to prevent SplitType line wrappers from clipping large headings
+.text-clip-fix {
+  .line {
+    @apply overflow-visible;
   }
 }
 
@@ -809,3 +852,5 @@ html.lenis {
     @apply md:w-[450px] lg:w-[770px];
   }
 }
+
+// (scoped rounding applied in specific sections/components)

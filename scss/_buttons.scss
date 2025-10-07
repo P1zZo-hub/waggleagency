@@ -1,115 +1,228 @@
-.rv-button {
-  @apply relative overflow-hidden;
-  .rv-button-top,
-  .rv-button-bottom {
-    @apply block w-full min-w-[210px] px-[39px] py-[25px] transition duration-500 md:inline-block md:w-auto;
-    span {
-      @apply inline-block font-normal uppercase tracking-[1.12px] transition duration-500;
-    }
-  }
-  .rv-button-top {
-    @apply relative z-10;
-  }
-  .rv-button-bottom {
-    @apply absolute left-0 top-0 z-[9] h-full w-full translate-y-full;
-    span {
-      @apply rotate-12;
-    }
-  }
-  &:hover {
-    .rv-button-top {
-      @apply -translate-y-[101%];
-      span {
-        @apply -rotate-12;
-      }
-    }
-    .rv-button-bottom {
-      @apply translate-y-0;
-      span {
-        @apply rotate-0;
-      }
-    }
-  }
-  &-secondary {
-    .rv-button-top {
-      @apply z-10 border border-secondary bg-secondary dark:border-backgroundBody dark:bg-backgroundBody;
-      span {
-        @apply text-backgroundBody dark:text-secondary;
-      }
-    }
-    .rv-button-bottom {
-      @apply z-[9] border border-secondary bg-backgroundBody dark:border-colorText dark:bg-secondary;
-      span {
-        @apply text-secondary dark:text-backgroundBody;
-      }
-    }
-  }
-  &-secondary-v2 {
-    .rv-button-top {
-      @apply z-10 border border-[#edf0f51a] bg-secondary dark:border-secondary/10 dark:bg-backgroundBody;
-      span {
-        @apply font-normal text-backgroundBody dark:text-secondary;
-      }
-    }
-    .rv-button-bottom {
-      @apply z-[9] border border-secondary bg-backgroundBody dark:border-colorText dark:bg-secondary;
-      span {
-        @apply font-normal text-secondary dark:text-backgroundBody;
-      }
-    }
-  }
-  &-white {
-    .rv-button-top {
-      @apply z-10 border bg-backgroundBody dark:border-dark dark:bg-dark;
-      span {
-        @apply text-secondary dark:text-backgroundBody;
-      }
-    }
-    .rv-button-bottom {
-      @apply z-[9] border border-secondary bg-secondary dark:border-backgroundBody dark:bg-backgroundBody;
-      span {
-        @apply text-backgroundBody dark:text-secondary;
-      }
-    }
-  }
-  &-primary {
-    .rv-button-top {
-      @apply z-10 bg-primary;
-      span {
-        @apply font-semibold text-[#ffdb7c];
-      }
-    }
-    .rv-button-bottom {
-      @apply z-[9] border border-secondary bg-secondary;
-      span {
-        @apply font-semibold text-backgroundBody;
-      }
-    }
-  }
-  &-primary2 {
-    .rv-button-top {
-      @apply z-10 border bg-backgroundBody dark:border-dark dark:bg-inherit;
-      span {
-        @apply text-secondary dark:text-backgroundBody;
-      }
-    }
-    .rv-button-bottom {
-      @apply z-[9] border border-primary bg-primary dark:mt-[0.98px];
-      span {
-        @apply text-secondary;
-      }
-    }
-  }
-  &.rv-button-sm {
-    .rv-button-top,
-    .rv-button-bottom {
-      @apply min-w-[127px] px-5 py-4 md:min-w-[150px] md:px-[30px] md:py-[19px];
-    }
-  }
-  &.rv-button-sm-v2 {
-    .rv-button-top,
-    .rv-button-bottom {
-      @apply min-w-[150px] px-5 py-4 md:min-w-[180px] md:px-[30px] md:py-[19px];
-    }
-  }
+/* ---------- Liquid Glass Button (iOS26 style) ---------- */
+.btn {
+  -webkit-tap-highlight-color: transparent;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+
+  padding: .7rem 1.05rem;
+  border-radius: 9999px;
+  border: 1px solid var(--glass-border);
+
+  background:
+    radial-gradient(120% 120% at 12% 8%, var(--glass-highlight) 0%, transparent 46%),
+    linear-gradient(180deg, hsla(0,0%,100%,.12), hsla(0,0%,100%,0) 32%),
+    var(--glass-bg);
+  color: var(--waggle-white);
+
+  backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-sat));
+  -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-sat));
+
+  box-shadow:
+    0 1px 0 var(--glass-highlight) inset,
+    0 6px 18px var(--glass-shadow);
+
+  font-weight: 600;
+  line-height: 1;
+  user-select: none;
+  cursor: pointer;
+  transition:
+    transform var(--dur-press) var(--ease-out),
+    box-shadow var(--dur-press) var(--ease-out),
+    background-position var(--dur-hover) var(--ease-out);
 }
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.btn:active {
+  transform: translateY(0);
+  box-shadow:
+    0 0 0 var(--glass-highlight) inset,
+    0 4px 12px var(--glass-shadow);
+}
+
+.btn:focus-visible {
+  outline: none;
+  box-shadow:
+    0 0 0 var(--ring) var(--ring-color),
+    0 8px 24px var(--glass-shadow);
+}
+
+/* Increase specificity so variants don't override forced text */
+.btn.btn--coffee-text.btn--primary,
+.btn.btn--coffee-text.btn--secondary,
+.btn.btn--coffee-text.btn--ghost {
+  color: #3c3c3b !important;
+}
+.btn.btn--coffee-text.btn--primary > span,
+.btn.btn--coffee-text.btn--secondary > span,
+.btn.btn--coffee-text.btn--ghost > span {
+  color: #3c3c3b !important;
+}
+
+/* ---------- Forced text utility ---------- */
+.force-gold,
+.force-gold * {
+  color: #ffdb7c !important;
+}
+.dark .force-gold,
+.dark .force-gold * {
+  color: #ffdb7c !important;
+}
+
+/* Sheen highlight that glides on hover (no JS) */
+.btn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background:
+    linear-gradient(120deg, transparent 35%, hsla(0,0%,100%,.18) 50%, transparent 65%);
+  background-size: 220% 100%;
+  background-position: 120% 0;
+  pointer-events: none;
+  transition: background-position var(--dur-hover) var(--ease-out);
+  mix-blend-mode: screen;
+}
+
+.btn:hover::after { background-position: -20% 0; }
+
+/* ---------- Variants ---------- */
+.btn--primary {
+  /* tint the glass with honey & keep text dark for contrast */
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  padding: .35rem .6rem;
+  border-radius: 9999px;
+  border: 1px solid var(--glass-border);
+  background:
+    radial-gradient(120% 120% at 12% 8%, var(--glass-highlight) 0%, transparent 46%),
+    linear-gradient(180deg, hsla(0,0%,100%,.12), hsla(0,0%,100%,0) 32%),
+    var(--glass-bg);
+  color: var(--waggle-white);
+  backdrop-filter: blur(calc(var(--glass-blur) - 4px)) saturate(var(--glass-sat));
+  -webkit-backdrop-filter: blur(calc(var(--glass-blur) - 4px)) saturate(var(--glass-sat));
+  box-shadow: 0 1px 0 var(--glass-highlight) inset, 0 4px 12px var(--glass-shadow);
+  font-weight: 500;
+  line-height: 1;
+}
+
+.btn--secondary {
+  background:
+    radial-gradient(120% 120% at 12% 8%, hsla(0,0%,100%,.3) 0%, transparent 46%),
+    linear-gradient(180deg, hsla(182, 70%, 74%, .5), hsla(182, 70%, 58%, .25) 40%, transparent 100%),
+    color-mix(in oklab, var(--waggle-turquoise) 30%, var(--waggle-white) 6%);
+  border-color: color-mix(in oklab, var(--waggle-turquoise) 70%, white 30%);
+}
+
+.btn--ghost {
+  /* pure glass */
+  color: var(--waggle-white);
+  background:
+    radial-gradient(120% 120% at 12% 8%, var(--glass-highlight) 0%, transparent 46%),
+    linear-gradient(180deg, hsla(0,0%,100%,.12), hsla(0,0%,100%,0) 32%),
+    var(--glass-bg);
+}
+
+/* ---------- Sizes ---------- */
+.btn--sm { padding: .55rem .9rem; font-size: .875rem; }
+.btn--md { padding: .7rem 1.05rem; font-size: .95rem; }
+.btn--lg { padding: .9rem 1.25rem; font-size: 1.05rem; }
+
+/* ---------- Icon slot ---------- */
+.btn .icon {
+  display: inline-flex;
+  width: 1.1em;
+  height: 1.1em;
+  line-height: 1;
+}
+
+/* ---------- Loading ---------- */
+.btn[aria-busy="true"] { pointer-events: none; }
+.btn__spinner {
+  width: 1.1em; height: 1.1em; border-radius: 9999px;
+  border: 2px solid hsla(0,0%,100%,.35);
+  border-top-color: hsla(0,0%,100%,.95);
+  animation: spin 800ms linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* ---------- Reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .btn, .btn::after { transition: none; }
+  .btn__spinner { animation: none; }
+}
+
+/* ---------- Backward-compat for existing rv-button usages ---------- */
+.rv-button {
+  @apply inline-block;
+}
+.rv-button.rv-button-primary, .rv-button.rv-button-primary2 { border-color: transparent; }
+.rv-button.rv-button-secondary, .rv-button.rv-button-secondary-v2, .rv-button.rv-button-white { border-color: transparent; }
+
+/* ---------- Liquid Glass Badges ---------- */
+.rv-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  padding: .35rem .6rem;
+  border-radius: 9999px;
+  border: 1px solid var(--glass-border);
+  background:
+    radial-gradient(120% 120% at 12% 8%, var(--glass-highlight) 0%, transparent 46%),
+    linear-gradient(180deg, hsla(0,0%,100%,.12), hsla(0,0%,100%,0) 32%),
+    var(--glass-bg);
+  color: var(--waggle-white);
+  backdrop-filter: blur(calc(var(--glass-blur) - 4px)) saturate(var(--glass-sat));
+  -webkit-backdrop-filter: blur(calc(var(--glass-blur) - 4px)) saturate(var(--glass-sat));
+  box-shadow: 0 1px 0 var(--glass-highlight) inset, 0 4px 12px var(--glass-shadow);
+  font-weight: 500;
+  line-height: 1;
+}
+
+.rv-badge--primary {
+  color: var(--waggle-ink);
+  border-color: color-mix(in oklab, var(--waggle-honey) 65%, white 35%);
+  background:
+    radial-gradient(120% 120% at 12% 8%, hsla(0,0%,100%,.3) 0%, transparent 46%),
+    linear-gradient(180deg, hsla(52, 100%, 80%, .55), hsla(52, 100%, 60%, .25) 38%, transparent 100%),
+    color-mix(in oklab, var(--waggle-honey) 38%, var(--waggle-white) 6%);
+}
+
+.rv-badge--secondary {
+  border-color: color-mix(in oklab, var(--waggle-turquoise) 70%, white 30%);
+  background:
+    radial-gradient(120% 120% at 12% 8%, hsla(0,0%,100%,.3) 0%, transparent 46%),
+    linear-gradient(180deg, hsla(182, 70%, 74%, .5), hsla(182, 70%, 58%, .25) 40%, transparent 100%),
+    color-mix(in oklab, var(--waggle-turquoise) 30%, var(--waggle-white) 6%);
+}
+
+.rv-badge .icon { width: 1em; height: 1em; }
+
+/* ---------- Theme Switcher Glass (light: blackish, dark: whitish) ---------- */
+.theme-switcher-btn {
+  background:
+    radial-gradient(120% 120% at 12% 8%, var(--glass-highlight) 0%, transparent 46%),
+    linear-gradient(180deg, hsla(0,0%,100%,.12), hsla(0,0%,100%,0) 32%),
+    rgba(0,0,0,0.55);
+  color: var(--waggle-white);
+  border-color: hsla(0, 0%, 100%, 0.25);
+}
+.dark .theme-switcher-btn {
+  background:
+    radial-gradient(120% 120% at 12% 8%, var(--glass-highlight) 0%, transparent 46%),
+    linear-gradient(180deg, hsla(0,0%,100%,.18), hsla(0,0%,100%,0) 32%),
+    rgba(255,255,255,0.45);
+  color: var(--waggle-ink);
+  border-color: hsla(0, 0%, 100%, 0.35);
+}
+
+.btn.btn--coffee-text { color: #3c3c3b !important; }
+.btn.btn--coffee-text > span { color: #3c3c3b !important; }
+.dark .btn.btn--coffee-text { color: #3c3c3b !important; }
+.dark .btn.btn--coffee-text > span { color: #3c3c3b !important; }

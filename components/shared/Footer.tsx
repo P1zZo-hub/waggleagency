@@ -63,8 +63,8 @@ const Footer = () => {
       </div>
 
       <div className="absolute bottom-0 w-full">
-        <h5 className="footer-text xs:text-5xl absolute bottom-0 left-1/2 w-full -translate-x-1/2 translate-y-[30%] text-nowrap text-center font-poppins text-4xl font-medium tracking-widest sm:text-6xl md:text-[88px] lg:text-[120px] xl:text-[150px] 2xl:text-[170px]">
-          RIVOR AGENCY
+        <h5 className="footer-text text-white xs:text-5xl absolute bottom-0 left-1/2 w-full -translate-x-1/2 translate-y-[15%] text-nowrap text-center font-degular text-4xl font-semibold tracking-widest sm:text-6xl md:text-[88px] lg:text-[120px] xl:text-[150px] 2xl:text-[170px]">
+          Waggle Agency
         </h5>
       </div>
     </FooterProvider>

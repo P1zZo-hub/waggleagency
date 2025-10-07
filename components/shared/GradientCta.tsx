@@ -10,10 +10,8 @@ const GradientCta = () => {
         placeholder="hello@email.com"
         className="block w-full border-none bg-transparent p-5 text-base focus:outline-none md:p-7"
       />
-      <button
-        type="submit"
-        className="absolute right-3 top-3 inline-block cursor-pointer bg-primary p-3 uppercase text-secondary max-md:text-xs md:right-2 md:top-2 md:p-6 md:leading-[15.4px] md:tracking-[1.12px]">
-        Subscribe
+      <button type="submit" className="btn btn--secondary btn--sm absolute right-3 top-3">
+        <span>Subscribe</span>
       </button>
     </form>
   )

@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Button from '@/components/ui/Button'
 import RevealWrapper from '../animation/RevealWrapper'
 import HeroGradientAnimation from '../shared/HeroGradientAnimation'
 import AnimatedHeroImage from './AnimatedHeroImage'
@@ -16,13 +17,8 @@ const HeroV6 = () => {
             </h1>
             <ul className="mt-10 flex list-none justify-center md:mt-14">
               <li className="block w-full text-center md:inline-block md:w-auto">
-                <Link href="/contact" className="rv-button rv-button-sm rv-button-primary block md:inline-block">
-                  <div className="rv-button-top">
-                    <span>Coffee Break?</span>
-                  </div>
-                  <div className="rv-button-bottom">
-                    <span className="text-nowrap">Coffee Break?</span>
-                  </div>
+                <Link href="/contact">
+                  <Button variant="primary" size="lg" className="btn--coffee-text">Coffee Break?</Button>
                 </Link>
               </li>
             </ul>

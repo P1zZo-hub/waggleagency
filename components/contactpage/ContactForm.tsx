@@ -195,13 +195,8 @@ const ContactForm = () => {
           </div>
 
           <div className="col-span-full sm:mt-14 md:mx-auto">
-            <button type="submit" className="rv-button rv-button-primary block w-full md:inline-block md:w-auto">
-              <div className="rv-button-top">
-                <span>Send Message</span>
-              </div>
-              <div className="rv-button-bottom">
-                <span className="text-nowrap">Send Message</span>
-              </div>
+            <button type="submit" className="btn btn--primary btn--md">
+              <span>Send Message</span>
             </button>
           </div>
         </RevealWrapper>
